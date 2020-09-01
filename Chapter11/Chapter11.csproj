@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA58BABD-601E-4F03-9416-F99D3E8E8DA4}</ProjectGuid>
+    <ProjectGuid>{AA2A930A-084F-46C0-91CB-C645198F884F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Chapter10</RootNamespace>
-    <AssemblyName>Chapter10</AssemblyName>
+    <RootNamespace>Chapter11</RootNamespace>
+    <AssemblyName>Chapter11</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Card.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

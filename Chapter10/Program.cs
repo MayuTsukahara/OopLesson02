@@ -7,12 +7,22 @@ using System.Threading.Tasks;
 namespace Chapter10 {
     class Program {
         static void Main(string[] args) {
-            var book1 = MakeBookObject();
-            var book2 = MakeBookObject();
-            book1.Print();
-            book2.Print();
-            
-            
+            #region 省略可能な引数
+            var person = new Person() {
+                FirstName = "りんちゃん",
+                LastName = "ぱぴよん"
+            };
+            var name1 = person.GetFullName();
+            Console.WriteLine(name1);
+            #endregion
+
+            #region オブジェクトを返すサンプル
+            //var book1 = MakeBookObject();
+            //var book2 = MakeBookObject();
+            //book1.Print();
+            //book2.Print();
+            #endregion
+
             #region GetArrayの呼び出し
             //var nums = GetArray(5);
             ////合計
@@ -26,7 +36,7 @@ namespace Chapter10 {
             //    total += nums[i];
             //}
             //Console.WriteLine($"合計:{total}");
-            # endregion   
+            #endregion
 
 
 
@@ -51,12 +61,15 @@ namespace Chapter10 {
             Console.Write("ページ数　⇒　");
             var pages = Console.ReadLine();
 
+            Console.Write("５段階評価　⇒　");
+            var rating = Console.ReadLine();
+
             //オブジェクト初期化子を使ったオブジェクトの初期化
             var book = new Book {
                 Title = title,
                 Author = author,
                 Pages = int.Parse(pages),
-                Rating = 3
+                Rating = int.Parse(rating)
             };
 
             return book;
